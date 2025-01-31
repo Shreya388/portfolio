@@ -1,0 +1,95 @@
+.product-img {
+  height: 450px;
+  width: auto;
+  object-fit: cover;
+  max-width: 300px;
+}
+
+ 
+.focus-in-expand {
+  animation: focus-in-expand .8s cubic-bezier(.25, .46, .45, .94) both
+}
+
+@keyframes focus-in-expand {
+  0% {
+    letter-spacing: -.5em;
+    filter: blur(12px);
+    opacity: 0
+  }
+
+  100% {
+    filter: blur(0);
+    opacity: 1
+  }
+}
+
+.custom-cursor {
+  cursor: url('../mouse-pointer.png') 32 32, pointer; /* x and y offsets for hotspot */
+}
+
+
+/* loader */
+
+/* Loader styles */
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgb(255, 255, 255);
+  z-index: 999;
+  transition: 0.8s;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  margin: 0 5px;
+  background-color: #797979;
+  filter: blur(0.5px);
+  border-radius: 70%;
+  animation: bounce 0.9s infinite ease-in-out;
+}
+
+.dot:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.dot:nth-child(2) {
+  animation-delay: 0.1s;
+}
+
+.dot:nth-child(3) {
+  animation-delay: 0.2s;
+}
+
+.dot:nth-child(4) {
+  animation-delay: 0.3s;
+}
+
+.dot:nth-child(5) {
+  animation-delay: 0.4s;
+}
+
+.dot:nth-child(6) {
+  animation-delay: 0.3s;
+}
+
+@keyframes bounce {
+  0%, 100% {
+      transform: translateY(0);
+  }
+  50% {
+      transform: translateY(-20px);
+  }
+}
+
+/* Hide content initially */
+#content {
+  display: none;
+}

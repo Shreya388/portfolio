@@ -1,0 +1,442 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Fashion - Home</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/animation.css">
+    <link rel="stylesheet" href="./assets/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<!-- Loader -->
+<div id="loader" class="loader">
+    <div class="dot"></div>
+    <div class="dot"></div>
+    <div class="dot"></div>
+    <div class="dot"></div>
+    <div class="dot"></div>
+    <div class="dot"></div>
+</div>
+
+<div id="content">
+    <div class="relative bg-slate-600 py-3">
+        <h1 class="text-center text-xs font-normal text-slate-100">Time to refresh your wordrobe</h1>
+    </div>
+
+    <nav class="bg-white border-gray-200 w-full relative z-30">
+        <div class="flex flex-wrap mx-auto justify-between items-center max-w-screen-xl pt-8 px-4 pb-8">
+            <!-- Hamburger Menu (only on mobile) -->
+            <button id="menuToggle"
+                class="border-0 inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200">
+                <label for="menu-checkbox" class="cursor-pointer">
+                    <i class="text-2xl fa-solid fa-bars"></i>
+                </label>
+            </button>
+            <!-- Logo -->
+            <a href="./index.html" class="flex space-x-3 rtl:space-x-reverse">
+                <img src="./logo3.png" class="h-8" alt="Shop Logo">
+            </a>
+            <!-- Desktop Menu (does not change) -->
+            <div id="mega-menu-full"
+                class="font-medium gap-44 lg:inline hidden md:hidden lg:flex w-full md:flex md:w-auto md:order-1">
+                <ul
+                    class="mx-auto flex flex-col md:p-0 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white">
+                    <li class="relative group border-white py-1 border-b-2 hover:border-b-2 hover:border-gray-800">
+                        <button id="dropdownHomeLink"
+                            class="flex items-center justify-between w-full py-2 px-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:p-0">
+                            Home
+                            <i class="px-2 text-sm fa-solid fa-angle-down"></i>
+                        </button>
+                        <!-- Dropdown menu -->
+                        <div id="dropdownHome"
+                            class="absolute mt-1 hidden group-hover:block bg-white divide-y divide-gray-100 rounded-lg w-56 top-full left-0 z-10">
+                            <ul class="py-2 px-2 text-sm text-gray-700">
+                                <li>
+                                    <a href="./index.html" class="block px-4 py-4 hover:bg-slate-100">Home 01</a>
+                                </li>
+                                <li>
+                                    <a href="./index2.html" class="block px-4 py-4 hover:bg-slate-100">Home 02</a>
+                                </li>
+                                <li>
+                                    <a href="./index3.html" class="block px-4 py-4 hover:bg-slate-100">Home 03</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="relative group border-white py-1 border-b-2 hover:border-b-2 hover:border-gray-800">
+                        <button id="dropdownBlogLink"
+                            class="flex items-center justify-between w-full py-2 px-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:p-0">
+                            Blogs
+                            <i class="px-2 text-sm fa-solid fa-angle-down"></i>
+                        </button>
+                        <!-- Dropdown menu -->
+                        <div id="dropdownBlog"
+                            class="absolute mt-1 hidden group-hover:block bg-white divide-y divide-gray-100 rounded-lg w-56 top-full left-0 z-10">
+                            <ul class="py-2 px-2 text-sm text-gray-700">
+                                <li>
+                                    <a href="./blog2.html" class="block px-4 py-4 hover:bg-slate-100">Blog 01</a>
+                                </li>
+                                <li>
+                                    <a href="./arrival.html" class="block px-4 py-4 hover:bg-slate-100">Blog 02</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="relative group border-white py-1 border-b-2 hover:border-b-2 hover:border-gray-800">
+                        <button id="dropdownContactLink"
+                            class="flex items-center justify-between w-full py-2 px-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:p-0">
+                            Contact
+                            <i class="px-2 text-sm fa-solid fa-angle-down"></i>
+                        </button>
+                        <!-- Dropdown menu -->
+                        <div id="dropdownContact"
+                            class="absolute mt-1 hidden group-hover:block bg-white divide-y divide-gray-100 rounded-lg w-56 top-full left-0 z-10">
+                            <ul class="py-2 px-2 text-sm text-gray-700">
+                                <li>
+                                    <a href="./contact.html" class="block px-4 py-4 hover:bg-slate-100">Contact
+                                        01</a>
+                                </li>
+                                <li>
+                                    <a href="./contact2.html" class="block px-4 py-4 hover:bg-slate-100">Contact
+                                        02</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+                <button class="bg-slate-700 py-2 px-6 rounded-full text-white">Let's Talk</button>
+            </div>
+        </div>
+        <!-- Search Sidebar (Hidden Checkbox) -->
+        <input type="checkbox" id="toggleSidebar" class="peer hidden">
+        <!-- Sidebar -->
+        <div
+            class="fixed top-0 right-0 h-full w-96 bg-white p-8 border-l transform translate-x-full transition-transform duration-300 peer-checked:translate-x-0">
+            <!-- Close Button -->
+            <label for="toggleSidebar" class="absolute top-4 right-4 text-gray-600 cursor-pointer">
+                <i class="fa-solid fa-xmark"></i>
+            </label>
+            <!-- Search Box -->
+            <div class="mb-6 py-10 border-b">
+                <input type="text" placeholder="Search..."
+                    class="w-full p-2 border border-gray-300 rounded-0 focus:outline-none focus:ring-2 focus:ring-blue-500">
+            </div>
+            <!-- Quick Links -->
+            <h2 class="text-xl mb-4">Quick Links</h2>
+            <ul class="space-y-2">
+                <li><a href="#" class="text-sm text-slate-600 hover:underline">Fashion</a></li>
+                <li><a href="#" class="text-sm text-slate-600 hover:underline">Men</a></li>
+                <li><a href="#" class="text-sm text-slate-600 hover:underline">Women</a></li>
+                <li><a href="#" class="text-sm text-slate-600 hover:underline">Accessories</a></li>
+            </ul>
+            <!-- Inspiration Section -->
+            <h2 class="text-xl mt-6 mb-4">Need Some Inspiration?</h2>
+            <ul class="space-y-4">
+                <li class="flex justify-between">
+                    <span class="text-sm text-slate-600">Cotton Jersey Top</span>
+                    <span class="text-sm text-red-600">$8.00</span>
+                </li>
+                <li class="flex justify-between">
+                    <span class="text-sm text-slate-600">Mini Crossbody Bag</span>
+                    <span class="text-sm text-gray-800">$18.00</span>
+                </li>
+                <li class="flex justify-between">
+                    <span class="text-sm text-slate-600">Oversized Printed T-Shirt</span>
+                    <span class="text-sm text-gray-800">$18.00</span>
+                </li>
+            </ul>
+        </div>
+        <!-- Mobile Menu -->
+        <input type="checkbox" id="menu-checkbox" class="hidden peer">
+        <div
+            class="fixed top-0 left-0 h-full w-auto bg-white shadow-lg transform -translate-x-full peer-checked:translate-x-0 transition-transform duration-300 ease-in-out z-50 lg:hidden overflow-y-auto">
+            <!-- Close Button -->
+            <div class="flex items-center justify-between px-4 py-4 border-b">
+                <label for="menu-checkbox"
+                    class="cursor-pointer p-2 text-gray-700 hover:bg-gray-100 rounded md:text-lg">
+                    <i class="fa-solid fa-xmark"></i>
+                </label>
+            </div>
+            <!-- Mobile Menu Links -->
+            <ul class="space-y-4 px-8 md:px-16 py-10 z-20">
+                <!-- Home with Dropdown -->
+                <li class="relative">
+                    <input type="checkbox" id="toggle-home" class="peer hidden">
+                    <label for="toggle-home"
+                        class="text-gray-700 font-bold hover:text-gray-900 py-2 flex items-center cursor-pointer">
+                        Home
+                        <i class="px-2 text-sm fa-solid fa-angle-down"></i>
+                    </label>
+                    <ul
+                        class="hidden peer-checked:block mt-4 space-y-2 bg-white rounded-md max-h-60 overflow-y-auto">
+                        <li><a href="./index.html" class="block px-8 py-2 text-gray-700 hover:bg-gray-100">Home
+                                01</a></li>
+                        <li><a href="./index2.html" class="block px-8 py-2 text-gray-700 hover:bg-gray-100">Home
+                                02</a></li>
+                        <li><a href="./index3.html" class="block px-8 py-2 text-gray-700 hover:bg-gray-100">Home
+                                03</a></li>
+                    </ul>
+                </li>
+
+                <!-- Shop with Dropdown -->
+                <li class="relative">
+                    <input type="checkbox" id="toggle-shop" class="peer hidden">
+                    <label for="toggle-shop"
+                        class="font-bold text-gray-700 hover:text-gray-900 py-2 flex items-center cursor-pointer">
+                        Shop
+                        <i class="px-2 text-sm fa-solid fa-angle-down"></i>
+                    </label>
+                    <ul class="hidden peer-checked:block mt-4 space-y-2 bg-white rounded-md max-h-80">
+                        <li><a href="./men.html" class="block px-8 py-2 text-gray-700 hover:bg-gray-100">Men</a>
+                        </li>
+                        <li><a href="./women.html" class="block px-8 py-2 text-gray-700 hover:bg-gray-100">Women</a>
+                        </li>
+                        <li><a href="./kids.html" class="block px-8 py-2 text-gray-700 hover:bg-gray-100">Kids</a>
+                        </li>
+                        <li><a href="./footwear.html"
+                                class="block px-8 py-2 text-gray-700 hover:bg-gray-100">Footwear</a>
+                        </li>
+                        <li><a href="./accessories.html"
+                                class="block px-8 py-2 text-gray-700 hover:bg-gray-100">Accessories</a></li>
+                        <li><a href="./jewellery.html"
+                                class="block px-8 py-2 text-gray-700 hover:bg-gray-100">Jewellery</a>
+                        </li>
+                    </ul>
+                </li>
+                <!-- New Arrivals with Dropdown -->
+                <li class="relative">
+                    <input type="checkbox" id="toggle-arrival" class="peer hidden">
+                    <label for="toggle-arrival"
+                        class="font-bold text-gray-700 hover:text-gray-900 py-2 flex items-center cursor-pointer">
+                        New Arrivals
+                        <i class="px-2 text-sm fa-solid fa-angle-down"></i>
+                    </label>
+                    <ul class="hidden peer-checked:block mt-4 space-y-2 bg-white rounded-md max-h-full">
+                        <li><a href="./arrival.html"
+                                class="block px-8 py-2 text-gray-700 hover:bg-gray-100">Tops</a></li>
+                        <li><a href="./arrival.html"
+                                class="block px-8 py-2 text-gray-700 hover:bg-gray-100">Jackets</a>
+                        </li>
+                        <li><a href="./arrival.html"
+                                class="block px-8 py-2 text-gray-700 hover:bg-gray-100">Kurtas</a></li>
+                        <li><a href="./arrival.html"
+                                class="block px-8 py-2 text-gray-700 hover:bg-gray-100">Jeans</a></li>
+                        <li><a href="./arrival.html"
+                                class="block px-8 py-2 text-gray-700 hover:bg-gray-100">Dresses</a>
+                        </li>
+                        <li><a href="./arrival.html"
+                                class="block px-8 py-2 text-gray-700 hover:bg-gray-100">Bags</a></li>
+                        <li><a href="./arrival.html"
+                                class="block px-8 py-2 text-gray-700 hover:bg-gray-100">Jumpsuits</a>
+                        </li>
+                        <li><a href="./arrival.html"
+                                class="block px-8 py-2 text-gray-700 hover:bg-gray-100">Shirts</a></li>
+                        <li><a href="./arrival.html"
+                                class="block px-8 py-2 text-gray-700 hover:bg-gray-100">t-shirts</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <!-- Blogs with Dropdown -->
+                <li class="relative">
+                    <input type="checkbox" id="toggle-blogs" class="peer hidden">
+                    <label for="toggle-blogs"
+                        class="text-gray-700 font-bold hover:text-gray-900 py-2 flex items-center cursor-pointer">
+                        Blogs
+                        <i class="px-2 text-sm fa-solid fa-angle-down"></i>
+                    </label>
+                    <ul
+                        class="hidden peer-checked:block mt-4 space-y-2 bg-white rounded-md max-h-60 overflow-y-auto">
+                        <li><a href="./blog2.html" class="block px-8 py-2 text-gray-700 hover:bg-gray-100">Blog
+                                01</a></li>
+                        <li><a href="./blog3.html" class="block px-8 py-2 text-gray-700 hover:bg-gray-100">Blog
+                                02</a></li>
+                    </ul>
+                </li>
+                <!-- Contacts with Dropdown -->
+                <li class="relative">
+                    <input type="checkbox" id="toggle-contact" class="peer hidden">
+                    <label for="toggle-contact"
+                        class="text-gray-700 font-bold hover:text-gray-900 py-2 flex items-center cursor-pointer">
+                        Contacts
+                        <i class="px-2 text-sm fa-solid fa-angle-down"></i>
+                    </label>
+                    <ul
+                        class="hidden peer-checked:block mt-4 space-y-2 bg-white rounded-md max-h-60 overflow-y-auto">
+                        <li><a href="./contact.html" class="block px-8 py-2 text-gray-700 hover:bg-gray-100">Contact
+                                01</a></li>
+                        <li><a href="./contact2.html"
+                                class="block px-8 py-2 text-gray-700 hover:bg-gray-100">Contact 02</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="gap-4 space-x-4 px-8 md:px-16">
+                <button><img src="./heart.svg" alt="heart"></button>
+                <button><img src="./user.svg" alt="user"></button>
+                <button><img src="./shopping-bag.svg" alt="shopping-bag"></button>
+                <button><img src="./search.svg" alt="search"></button>
+            </div>
+            <div class="bg-gray-50 py-12 px-6 md:px-16">
+                <div class="max-w-xl mx-auto space-y-4">
+                    <p class="text-gray-600">
+                        Reach out to us for any inquiries or assistance. We’d love to hear from you!
+                    </p>
+                    <div class="space-y-2">
+                        <p class="text-slate-600">
+                            <span>Address:</span> 246 Trendy Blvd, Apt 89, Chicago, IL 60622
+                        </p>
+                        <p class="text-slate-600">
+                            <span>Email:</span>example@example.com`
+                        </p>
+                        <p class="text-slate-600">
+                            <span>Phone:</span>(312) 456-7890
+                        </p>
+                        <a href="https://maps.google.com" target="_blank"
+                            class="inline-block underline underline-offset-8 bg-white font-bold py-3 rounded-lg hover:bg-blue-700 transition">
+                            Get Directions
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Projects Section -->
+    <section class="container mx-auto px-6 py-12">
+        <h2 class="text-4xl font-bold text-center mb-12">My Projects</h2>
+        
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Project Cards -->
+            <div class="group relative bg-gray-800 rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition duration-300">
+                <img src="https://images.pexels.com/photos/796602/pexels-photo-796602.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Project Image" class="w-full h-60 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl text-white font-semibold">Project 1</h3>
+                    <p class="text-gray-400 mt-2">A brief description of the project.</p>
+                    <div class="flex justify-between items-center mt-4">
+                        <a href="#" class="text-blue-400 hover:text-blue-300">Live Demo</a>
+                        <a href="#" class="text-gray-400 hover:text-gray-300">GitHub ↗</a>
+                    </div>
+                </div>
+            </div>
+            <div class="group relative bg-gray-800 rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition duration-300">
+                <img src="https://images.pexels.com/photos/7792741/pexels-photo-7792741.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Project Image" class="w-full h-60 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl text-white font-semibold">Project 2</h3>
+                    <p class="text-gray-400 mt-2">A brief description of the project.</p>
+                    <div class="flex justify-between items-center mt-4">
+                        <a href="#" class="text-blue-400 hover:text-blue-300">Live Demo</a>
+                        <a href="#" class="text-gray-400 hover:text-gray-300">GitHub ↗</a>
+                    </div>
+                </div>
+            </div>
+            <div class="group relative bg-gray-800 rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition duration-300">
+                <img src="https://images.pexels.com/photos/733857/pexels-photo-733857.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Project Image" class="w-full h-60 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl text-white font-semibold">Project 3</h3>
+                    <p class="text-gray-400 mt-2">A brief description of the project.</p>
+                    <div class="flex justify-between items-center mt-4">
+                        <a href="#" class="text-blue-400 hover:text-blue-300">Live Demo</a>
+                        <a href="#" class="text-gray-400 hover:text-gray-300">GitHub ↗</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Contact Section -->
+    <section id="contact" class="container mx-auto px-6 py-28" style="background-image: url(https://images.pexels.com/photos/1166644/pexels-photo-1166644.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);">
+        <div>
+        <h2 class="text-4xl font-bold text-center mb-12">Get in Touch</h2>
+        <form class="max-w-lg mx-auto p-14 rounded-lg border bg-white">
+            <label class="block text-gray-400 mb-2">Name</label>
+            <input type="text" class="w-full p-3 mb-4 border-slate-200 rounded" placeholder="Your Name">
+            
+            <label class="block text-gray-400 mb-2">Email</label>
+            <input type="email" class="w-full p-3 mb-4 border-slate-200 rounded" placeholder="Your Email">
+            
+            <label class="block text-gray-400 mb-2">Message</label>
+            <textarea class="w-full p-3 border-slate-200 rounded" rows="4" placeholder="Your Message"></textarea>
+            
+            <button class="w-full mt-4 bg-slate-600 hover:bg-slate-700 text-white p-3 rounded">Send Message</button>
+        </form>
+        </div>
+    </section>
+
+    <footer class="bg-white text-slate-700 pt-16 border-t">
+        <div class="max-w-8xl mx-auto px-4 sm:px-6 text-center sm:text-left lg:px-16">
+            <!-- Footer Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 py-28">
+                <!-- About Section -->
+                <div>
+                    <img src="./logo3.png" alt="Logo" class="w-32 mb-4">
+                    <p class="text-slate-600 text-sm">
+                        We are a global e-commerce company offering a wide range of products, providing top-quality
+                        services to customers around the world.
+                    </p>
+                </div>
+                <!-- Resources Section -->
+                <div>
+                    <h3 class="text-lg text-slate-800 font-medium mb-4">Resources</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-sm text-slate-800 hover:text-slate-900">Help Center</a></li>
+                        <li><a href="#" class="text-sm text-slate-800 hover:text-slate-900">FAQs</a></li>
+                        <li><a href="#" class="text-sm text-slate-800 hover:text-slate-900">Shipping & Delivery</a>
+                        </li>
+                        <li><a href="#" class="text-sm text-slate-800 hover:text-slate-900">Returns & Refunds</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Quick Links Section -->
+                <div>
+                    <h3 class="text-lg text-slate-800 font-medium mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-sm text-slate-800 hover:text-slate-900">Home</a></li>
+                        <li><a href="#" class="text-sm text-slate-800 hover:text-slate-900">Shop</a></li>
+                        <li><a href="#" class="text-sm text-slate-800 hover:text-slate-900">Products</a></li>
+                        <li><a href="#" class="text-sm text-slate-800 hover:text-slate-900">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Company Section -->
+                <div>
+                    <h3 class="text-lg text-slate-800 font-medium mb-4">Company</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-sm text-slate-800 hover:text-slate-900">About Us</a></li>
+                        <li><a href="#" class="text-sm text-slate-800 hover:text-slate-900">Careers</a></li>
+                        <li><a href="#" class="text-sm text-slate-800 hover:text-slate-900">Press</a></li>
+                        <li><a href="#" class="text-sm text-slate-800 hover:text-slate-900">Blog</a></li>
+                    </ul>
+                </div>
+
+                <!-- Social Media Section -->
+                <div>
+                    <h3 class="text-lg text-slate-800 font-medium mb-4">Follow Us</h3>
+                    <div class="flex space-x-4 justify-center lg:justify-start">
+                        <a href="#" class="text-2xl text-slate-800 hover:text-slate-900"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-2xl text-slate-800 hover:text-slate-900"><i
+                                class="fa-brands fa-x-twitter"></i></a>
+                        <a href="#" class="text-2xl text-slate-800 hover:text-slate-900"><i
+                                class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-2xl text-slate-800 hover:text-slate-900"><i
+                                class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Copyright Section -->
+            <div class="border-t border-gray-300 py-6 mt-8">
+                <p class="text-slate-600 text-center text-sm">&copy; 2024 Fashion. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
+<script src="./assets/script.js"></script>
+</body>
+</html>

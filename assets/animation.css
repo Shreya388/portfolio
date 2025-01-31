@@ -1,0 +1,65 @@
+
+@keyframes rotate-3 {
+  0% {
+    transform: rotate(0deg);
+    filter: opacity(10);
+  }
+
+  30%{
+    transform: rotate(180deg);
+    filter: opacity(0.6);
+  }
+
+  100% {
+    transform: rotate(360deg);
+    filter: opacity(0.5);
+  }
+}
+
+.repeat-rotate-slow {
+  animation: rotate-3 5s infinite linear;
+}
+
+/* Box */
+.box-grey {
+  width: 0;
+  height: 0;
+  border: 20px solid #ffffff67;
+}
+
+.box-pink {
+  width: 50px;
+  height: 50px;
+  background-color: black;
+  opacity: 0.1;
+}
+
+.box-pink:hover {
+  border:2px solid #333333a6;
+}
+
+.box-pink:hover {
+  animation: none;
+}
+
+.box-grey:hover {
+  animation: none;
+}
+
+
+/* Scrolling div */
+@keyframes scroll {
+  0% {
+    transform: translateX(0%);
+  }
+  50% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+  
+}
+.scrolling-text {
+  animation: scroll 20s infinite;
+}

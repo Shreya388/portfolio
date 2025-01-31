@@ -1,0 +1,287 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Portfolio - Home</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/animation.css">
+    <link rel="stylesheet" href="./assets/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <!-- Loader -->
+    <div id="loader" class="loader">
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+    </div>
+
+    <div id="content">
+        <!-- Navbar -->
+        <nav id="navbar" class="fixed top-0 left-0 w-full z-50 bg-transparent transition-all duration-300">
+            <div class="max-w-screen-xl mx-auto flex justify-between items-center px-6 py-7">
+                <!-- Logo -->
+                <a href="#" class="text-2xl font-semibold text-white transition-all duration-300">Portfolio</a>
+
+                <!-- Menu Links -->
+                <div class="hidden lg:flex space-x-8 items-center">
+                    <a href="#" class="nav-link text-slate-200 hover:text-white transition-all duration-300">Home</a>
+                    <a href="#" class="nav-link text-slate-200 hover:text-white transition-all duration-300">About</a>
+                    <a href="#" class="nav-link text-slate-200 hover:text-white transition-all duration-300">Services</a>
+                    <a href="#" class="nav-link text-slate-200 hover:text-white transition-all duration-300">Projects</a>
+                    <a href="#" class="nav-link text-slate-200 hover:text-white transition-all duration-300">Contact</a>
+                </div>
+
+                <!-- Download CV Button -->
+                <button
+                    class="border-2 border-slate-50 text-slate-50 py-2 px-6 rounded-full transition-all duration-300 nav-button">
+                    Download CV
+                </button>
+            </div>
+        </nav>
+        <div class="w-full mx-auto absolute hidden sm:block" style="z-index: 1;">
+            <!-- Background Grid -->
+            <div class="grid grid-cols-8 gap-32 md:gap-14 py-32 ml-20">
+                <div class="box-grey repeat-rotate-slow"></div>
+                <div class="box-pink repeat-rotate-slow"></div>
+                <div class="box-pink repeat-rotate-slow"></div>
+                <div class="box-grey repeat-rotate-slow"></div>
+                <div class="box-pink repeat-rotate-slow"></div>
+                <div class="box-pink repeat-rotate-slow"></div>
+                <div class="box-grey repeat-rotate-slow"></div>
+                <div class="box-pink repeat-rotate-slow"></div>
+            </div>
+            <div class="grid grid-cols-8 gap-32 md:gap-14 mt-24 ml-20">
+                <div class="box-grey repeat-rotate-slow"></div>
+                <div class="box-pink repeat-rotate-slow"></div>
+                <div class="box-grey repeat-rotate-slow"></div>
+                <div class="box-pink repeat-rotate-slow"></div>
+                <div class="box-pink repeat-rotate-slow"></div>
+                <div class="box-pink repeat-rotate-slow"></div>
+                <div class="box-grey repeat-rotate-slow"></div>
+                <div class="box-pink repeat-rotate-slow"></div>
+            </div>
+        </div>
+
+        <!-- Hero Section -->
+        <section id="hero" class="relative py-64 bg-gradient-to-b from-blue-950 to-white">
+            <div class="max-w-screen-xl mx-auto px-4 flex flex-col-reverse md:flex-row items-center gap-8">
+                <!-- Image Section -->
+                <div class="relative text-center flex justify-center items-center">
+                    <!-- Background Circle -->
+                    <div class="h-80 w-80 bg-slate-400 mt-20 absolute rounded-full z-10 opacity-30"></div>
+                    <!-- Image on Top -->
+                    <img src="./assets/img/prfile.png" alt="Hero Image" class="relative h-full w-full z-20">
+                </div>
+
+                <!-- Text Section -->
+                <div class="relative z-10 justify-center md:justify-end px-28">
+                    <h1 class="text-4xl md:text-6xl font-bold text-slate-900">Hello, I'm Sara</h1>
+                    <p class="mt-4 text-gray-700">A passionate Frontend Developer & Creative Designer</p>
+                    <a href="#projects"
+                        class="px-6 py-3 bg-slate-700 text-white rounded-lg mt-6 inline-block hover:bg-slate-800">
+                        View Projects
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="py-52 bg-white">
+            <div class="max-w-screen-xl mx-auto px-4 text-center">
+                <h2 class="text-3xl font-bold">About Me</h2>
+                <p class="mt-4 px-64 text-gray-600">I'm a ReactJS Developer with a passion for crafting elegant and
+                    user-friendly interfaces. I specialize in modern web development and have a keen eye for detail.</p>
+                <div class="mt-8 flex flex-wrap justify-center gap-8">
+                    <div class="w-40 text-center">
+                        <i class="ri-code-s-slash-line text-6xl text-slate-400"></i>
+                        <h3 class="text-xl font-thin text-slate-400 mt-2">Development</h3>
+                    </div>
+                    <div class="w-40 text-center">
+                        <i class="ri-palette-line text-6xl text-slate-400"></i>
+                        <h3 class="text-xl font-thin text-slate-400 mt-2">Design</h3>
+                    </div>
+                    <div class="w-40 text-center">
+                        <i class="ri-lightbulb-flash-line text-6xl text-slate-400"></i>
+                        <h3 class="text-xl font-thin text-slate-400 mt-2">Innovation</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="py-20 bg-gray-50">
+            <div class="max-w-screen-xl mx-auto px-4">
+                <h2 class="text-3xl font-bold text-center">Projects</h2>
+                <div class="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="bg-white shadow rounded">
+                        <img src="https://images.pexels.com/photos/1772123/pexels-photo-1772123.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                            alt="Project 1" class="rounded h-3/4">
+                        <div class="py-10 px-10">
+                            <h3 class="mt-4 font-bold text-lg">E-commerce Website</h3>
+                            <p class="text-gray-600">A modern online shopping platform built with React and Tailwind
+                                CSS.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="bg-white shadow rounded">
+                        <img src="https://images.pexels.com/photos/4065885/pexels-photo-4065885.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                            alt="Project 2" class="rounded h-3/4">
+                        <div class="py-10 px-10">
+                            <h3 class="mt-4 font-bold text-lg">Portfolio Website</h3>
+                            <p class="text-gray-600">A personal portfolio showcasing my skills and projects.</p>
+                        </div>
+                    </div>
+                    <div class="bg-white shadow rounded">
+                        <img src="https://images.pexels.com/photos/2528118/pexels-photo-2528118.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                            alt="Project 3" class="rounded h-3/4">
+                        <div class="py-10 px-10">
+                            <h3 class="mt-4 font-bold text-lg">Blog Platform</h3>
+                            <p class="text-gray-600">A simple blog platform with commenting and user profiles.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="py-20 bg-white">
+            <div class="max-w-screen-xl mx-auto px-4 text-center">
+                <h2 class="text-3xl font-bold">Services</h2>
+                <p class="mt-4 text-gray-600">I provide the following services to bring your ideas to life:</p>
+                <div class="mt-8 grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="p-20 bg-gray-100 rounded shadow">
+                        <h3 class="text-xl font-bold">Web Development</h3>
+                        <p class="mt-2 text-gray-600">Building responsive and fast websites using modern tools.</p>
+                    </div>
+                    <div class="p-20 bg-gray-100 rounded shadow">
+                        <h3 class="text-xl font-bold">UI/UX Design</h3>
+                        <p class="mt-2 text-gray-600">Crafting intuitive and aesthetic user interfaces.</p>
+                    </div>
+                    <div class="p-20 bg-gray-100 rounded shadow">
+                        <h3 class="text-xl font-bold">Consulting</h3>
+                        <p class="mt-2 text-gray-600">Offering expert advice on project optimization and scalability.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Blog Section -->
+        <section id="blog" class="py-20 bg-gray-50">
+            <div class="max-w-screen-xl mx-auto px-4">
+                <h2 class="text-3xl font-bold text-center">Blog</h2>
+                <div class="mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="bg-white shadow rounded p-20">
+                        <h3 class="font-bold text-lg">Latest Trends in Web Development</h3>
+                        <p class="mt-2 text-gray-600">An overview of the most popular frameworks and tools in 2025.</p>
+                    </div>
+                    <div class="bg-white shadow rounded p-20">
+                        <h3 class="font-bold text-lg">Mastering Tailwind CSS</h3>
+                        <p class="mt-2 text-gray-600">Tips and tricks to build stunning websites with Tailwind.</p>
+                    </div>
+                    <div class="bg-white shadow rounded p-20">
+                        <h3 class="font-bold text-lg">How to Build a Portfolio</h3>
+                        <p class="mt-2 text-gray-600">A step-by-step guide to creating a standout portfolio.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-20 bg-white">
+            <div class="max-w-screen-xl mx-auto px-4 flex flex-col md:flex-row items-center md:items-start gap-8">
+                <!-- Text and Form Section -->
+                <div class="md:flex-1">
+                    <h2 class="text-3xl font-bold">Contact</h2>
+                    <p class="mt-4 text-gray-600">Get in touch with me for collaborations or projects.</p>
+                    <form action="#" method="POST" class="mt-8 max-w-lg">
+                        <input type="text" name="name" placeholder="Your Name"
+                            class="w-full p-4 mb-4 border border-gray-200 rounded" required>
+                        <input type="email" name="email" placeholder="Your Email"
+                            class="w-full p-4 mb-4 border border-gray-200 rounded" required>
+                        <textarea name="message" placeholder="Your Message" rows="5"
+                            class="w-full p-4 mb-4 border border-gray-200 rounded" required></textarea>
+                        <button type="submit" class="px-6 py-3 bg-blue-900 text-white rounded hover:bg-blue-950">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+                <!-- Image Section -->
+                <div class="md:flex-1 flex justify-center">
+                    <div class="w-[500px] h-[500px] bg-neutral-800 rounded-lg shadow-lg overflow-hidden">
+                        <img src="https://images.pexels.com/photos/18069156/pexels-photo-18069156/free-photo-of-an-artist-s-illustration-of-artificial-intelligence-ai-this-image-depicts-the-process-used-by-text-to-image-diffusion-models-it-was-created-by-linus-zoll-as-part-of-the-visualising-ai.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                            alt="Contact Illustration" class="object-cover w-full h-full">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="bg-gray-900 text-white">
+            <div class="max-w-7xl mx-auto px-6 lg:px-16">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left py-32">
+                    <!-- Personal Branding -->
+                    <div class="pr-40">
+                        <h2 class="text-2xl font-semibold">Sara</h2>
+                        <p class="text-gray-400 text-sm mt-2">
+                            Frontend Developer | ReactJS Enthusiast | Passionate about Web UI/UX
+                        </p>
+                    </div>
+                    <!-- Quick Navigation -->
+                    <div>
+                        <h3 class="text-lg font-medium">Quick Links</h3>
+                        <ul class="mt-3 space-y-2">
+                            <li><a href="#about" class="text-gray-400 hover:text-white transition">About</a></li>
+                            <li><a href="#projects" class="text-gray-400 hover:text-white transition">Projects</a></li>
+                            <li><a href="#skills" class="text-gray-400 hover:text-white transition">Skills</a></li>
+                            <li><a href="#contact" class="text-gray-400 hover:text-white transition">Contact</a></li>
+                        </ul>
+                    </div>
+                    <!-- Social Media Links -->
+                    <div>
+                        <h3 class="text-lg font-medium">Connect with Me</h3>
+                        <div class="flex justify-center md:justify-start space-x-4 mt-3">
+                            <a href="#" class="text-3xl text-gray-400 hover:text-white transition"><i
+                                    class="ri-github-line"></i></a>
+                            <a href="#" class="text-3xl text-gray-400 hover:text-white transition"><i
+                                    class="ri-linkedin-line"></i></a>
+                            <a href="#" class="text-3xl text-gray-400 hover:text-white transition"><i
+                                    class="ri-instagram-line"></i></a>
+                            <a href="#" class="text-3xl text-gray-400 hover:text-white transition"><i
+                                    class="ri-mail-line"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Copyright -->
+                <div class="border-t border-gray-700 py-6 text-center">
+                    <p class="text-gray-500 text-sm">&copy; 2024 Sara. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script type="text/javascript">
+        const navbar = document.getElementById("navbar");
+
+        window.addEventListener("scroll", () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add("bg-gray-900");
+                navbar.classList.remove("bg-transparent");
+            } else {
+                navbar.classList.add("bg-transparent");
+                navbar.classList.remove("bg-gray-900");
+            }
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
+    <script src="./assets/script.js"></script>
+</body>
