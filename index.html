@@ -48,7 +48,7 @@
                 <!-- Download CV Button -->
                 <button
                     class="border-2 border-slate-50 text-slate-50 py-2 px-6 rounded-full transition-all duration-300 nav-button">
-                    Download CV
+                    Download CV <i class="ri-download-line"></i>
                 </button>
             </div>
         </nav>
@@ -78,50 +78,141 @@
 
         <!-- Hero Section -->
         <section id="hero" class="relative py-64 h-screen bg-gradient-to-b from-blue-950 to-white">
-            <div class="max-w-screen-xl mx-auto px-4 flex flex-col-reverse md:flex-row items-center gap-8">
-                <!-- Image Section -->
-                <div class="relative text-center flex justify-center items-center">
-                    <!-- Background Circle -->
-                    <div class="h-80 w-80 bg-slate-400 mt-20 absolute rounded-full z-10 opacity-30 animate__animated animate__pulse animate__infinite"></div>
-                    <!-- Image on Top -->
-                    <img src="./assets/img/prfile.png" alt="Hero Image" class="relative h-full w-full z-20"
-                        draggable="false">
-                </div>
-
+            <div class="max-w-screen-xl mx-auto px-4 mx-auto gap-8">
                 <!-- Text Section -->
                 <div class="relative z-10 justify-center md:justify-end px-28">
-                    <h1 class="text-4xl md:text-6xl font-bold text-slate-900">Hello, I'm Sara</h1>
-                    <p class="mt-4 text-gray-700">A passionate Frontend Developer & Creative Designer</p>
+                    <h1 class="text-4xl md:text-6xl font-bold text-slate-900">Hello!<br> I'm Shreya Jha</h1>
+                    <p class="mt-4 text-gray-900">A passionate Frontend Developer & Creative Designer</p>
                     <a href="#projects"
-                        class="px-6 py-3 bg-slate-700 text-white rounded-lg mt-6 inline-block hover:bg-slate-800">
-                        View Projects
+                        class="px-6 py-3 bg-slate-800 text-white rounded-lg mt-6 inline-block hover:bg-slate-900">
+                        View Projects <i class="ri-arrow-right-line text-lg"></i>
                     </a>
                 </div>
             </div>
         </section>
 
         <!-- About Section -->
-        <section id="about" class="py-52 bg-white">
+        <section id="about" class="py-28 bg-slate-900">
             <div class="max-w-screen-xl mx-auto px-4 text-center">
-                <h2 class="text-3xl font-bold">About Me</h2>
-                <p class="mt-4 px-64 text-gray-600">I'm a ReactJS Developer with a passion for crafting elegant and
+                <h2 class="text-3xl text-white font-bold">About Me</h2>
+                <p class="mt-4 px-80 text-gray-300 text-sm font-light">I'm a ReactJS Developer with a passion for
+                    crafting elegant and
                     user-friendly interfaces. I specialize in modern web development and have a keen eye for detail.</p>
                 <div class="mt-8 flex flex-wrap justify-center gap-8">
                     <div class="w-40 text-center">
-                        <i class="ri-code-s-slash-line text-6xl text-slate-400"></i>
-                        <h3 class="text-xl font-thin text-slate-400 mt-2">Development</h3>
+                        <i class="ri-code-s-slash-line text-4xl text-slate-400"></i>
+                        <h3 class="text-lg font-thin text-slate-400 mt-2">Development</h3>
                     </div>
                     <div class="w-40 text-center">
-                        <i class="ri-palette-line text-6xl text-slate-400"></i>
-                        <h3 class="text-xl font-thin text-slate-400 mt-2">Design</h3>
+                        <i class="ri-palette-line text-4xl text-slate-400"></i>
+                        <h3 class="text-lg font-thin text-slate-400 mt-2">Design</h3>
                     </div>
                     <div class="w-40 text-center">
-                        <i class="ri-lightbulb-flash-line text-6xl text-slate-400"></i>
-                        <h3 class="text-xl font-thin text-slate-400 mt-2">Innovation</h3>
+                        <i class="ri-lightbulb-flash-line text-4xl text-slate-400"></i>
+                        <h3 class="text-lg font-thin text-slate-400 mt-2">Innovation</h3>
                     </div>
                 </div>
             </div>
         </section>
+
+        <div class="bg-slate-100">
+            <div class="max-w-screen-xl py-28 mx-auto">
+                <div class="space-y-6">
+                    <!-- Progress Bar 1 -->
+                    <div class="grid grid-cols-2 gap-20">
+                        <h1 class="text-2xl font-semibold text-slate-600">Design Skills</h1>
+                        <h1 class="text-2xl font-semibold text-slate-600">Development Skills</h1>
+                    </div>
+                    <div class="grid grid-cols-2 gap-20">
+                        <div>
+                            <div class="flex justify-between py-4">
+                                <span class="text-base font-medium dark:text-white">Next.js</span>
+                                <span class="text-base font-medium dark:text-white">45%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-1.5 dark:bg-gray-700">
+                                <div class="bg-slate-600 h-1.5 rounded-full dark:bg-slate-500" style="width: 45%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <!-- Progress Bar 2 -->
+                            <div class="flex justify-between py-4">
+                                <span class="text-base font-medium dark:text-white">HTML</span>
+                                <span class="text-base font-medium dark:text-white">100%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-1.5 dark:bg-gray-700">
+                                <div class="bg-slate-500 h-1.5 rounded-full dark:bg-slate-500" style="width: 100%">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-2 gap-20">
+                        <div>
+                            <div class="flex justify-between py-4">
+                                <span class="text-base font-medium dark:text-white"></span>
+                                <span class="text-base font-medium dark:text-white">45%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-1.5 dark:bg-gray-700">
+                                <div class="bg-slate-600 h-1.5 rounded-full dark:bg-slate-500" style="width: 45%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <!-- Progress Bar 2 -->
+                            <div class="flex justify-between py-4">
+                                <span class="text-base font-medium dark:text-white">Next.js</span>
+                                <span class="text-base font-medium dark:text-white">85%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-1.5 dark:bg-gray-700">
+                                <div class="bg-slate-600 h-1.5 rounded-full dark:bg-slate-500" style="width: 85%"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-2 gap-20">
+                        <div>
+                            <div class="flex justify-between py-4">
+                                <span class="text-base font-medium dark:text-white">Next.js</span>
+                                <span class="text-base font-medium dark:text-white">45%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-1.5 dark:bg-gray-700">
+                                <div class="bg-slate-600 h-1.5 rounded-full dark:bg-slate-500" style="width: 45%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <!-- Progress Bar 2 -->
+                            <div class="flex justify-between py-4">
+                                <span class="text-base font-medium dark:text-white">JavaScript</span>
+                                <span class="text-base font-medium dark:text-white">95%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-1.5 dark:bg-gray-700">
+                                <div class="bg-slate-500 h-1.5 rounded-full dark:bg-slate-500" style="width: 95%"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Progress Bar 1 -->
+                    <div class="grid grid-cols-2 gap-20 py-4">
+                        <div>
+                            <div class="flex justify-between py-4">
+                                <span class="text-base font-medium dark:text-white">HTML</span>
+                                <span class="text-base font-medium dark:text-white">45%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-1.5 dark:bg-gray-700">
+                                <div class="bg-slate-600 h-1.5 rounded-full dark:bg-slate-500" style="width: 45%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <!-- Progress Bar 2 -->
+                            <div class="flex justify-between py-4">
+                                <span class="text-base font-medium dark:text-white">ReactJS</span>
+                                <span class="text-base font-medium dark:text-white">90%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-1.5 dark:bg-gray-700">
+                                <div class="bg-slate-600 h-1.5 rounded-full dark:bg-slate-500" style="width: 90%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
 
         <!-- Projects Section -->
         <section id="projects" class="py-20 bg-gray-50">
@@ -129,29 +220,59 @@
                 <h2 class="text-3xl font-bold text-center">Projects</h2>
                 <div class="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     <div class="bg-white shadow rounded">
-                        <img src="https://images.pexels.com/photos/1772123/pexels-photo-1772123.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                            alt="Project 1" class="rounded h-3/4">
-                        <div class="py-10 px-10">
+                        <img src="https://images.pexels.com/photos/4065885/pexels-photo-4065885.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                            alt="Project 1" class="rounded">
+                        <div class="py-6 px-6">
                             <h3 class="mt-4 font-bold text-lg">E-commerce Website</h3>
                             <p class="text-gray-600">A modern online shopping platform built with React and Tailwind
                                 CSS.
                             </p>
+                            <div class="pb-6 pt-4 flex">
+                                <button href="#"
+                                    class="bg-slate-800 text-white w-1/2 py-3 rounded mr-2 hover:bg-slate-900">
+                                    View Live <i class="ri-eye-line text-xl"></i>
+                                </button>
+                                <button href="#"
+                                    class="bg-slate-200 text-slate-600 w-1/2 py-3 rounded hover:bg-slate-300 hover:text-slate-950">
+                                    View Code <i class="ri-code-s-slash-line text-xl"></i>
+                                </button>
+                            </div>
                         </div>
                     </div>
                     <div class="bg-white shadow rounded">
                         <img src="https://images.pexels.com/photos/4065885/pexels-photo-4065885.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                            alt="Project 2" class="rounded h-3/4">
-                        <div class="py-10 px-10">
+                            alt="Project 2" class="rounded">
+                        <div class="py-6 px-6">
                             <h3 class="mt-4 font-bold text-lg">Portfolio Website</h3>
                             <p class="text-gray-600">A personal portfolio showcasing my skills and projects.</p>
+                            <div class="pb-6 pt-4 flex">
+                                <button href="#"
+                                    class="bg-slate-800 text-white w-1/2 py-3 rounded mr-2 hover:bg-slate-900">
+                                    View Live <i class="ri-eye-line text-xl"></i>
+                                </button>
+                                <button href="#"
+                                    class="bg-slate-200 text-slate-600 w-1/2 py-3 rounded hover:bg-slate-300 hover:text-slate-950">
+                                    View Code <i class="ri-code-s-slash-line text-xl"></i>
+                                </button>
+                            </div>
                         </div>
                     </div>
                     <div class="bg-white shadow rounded">
                         <img src="https://images.pexels.com/photos/2528118/pexels-photo-2528118.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                            alt="Project 3" class="rounded h-3/4">
-                        <div class="py-10 px-10">
+                            alt="Project 3" class="rounded">
+                        <div class="py-6 px-6">
                             <h3 class="mt-4 font-bold text-lg">Blog Platform</h3>
                             <p class="text-gray-600">A simple blog platform with commenting and user profiles.</p>
+                            <div class="pb-6 pt-4 flex">
+                                <button href="#"
+                                    class="bg-slate-800 text-white w-1/2 py-3 rounded mr-2 hover:bg-slate-900">
+                                    View Live <i class="ri-eye-line text-xl"></i>
+                                </button>
+                                <button href="#"
+                                    class="bg-slate-200 text-slate-600 w-1/2 py-3 rounded hover:bg-slate-300 hover:text-slate-950">
+                                    View Code <i class="ri-code-s-slash-line text-xl"></i>
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -164,15 +285,15 @@
                 <h2 class="text-3xl font-bold">Services</h2>
                 <p class="mt-4 text-gray-600">I provide the following services to bring your ideas to life:</p>
                 <div class="mt-8 grid grid-cols-1 md:grid-cols-3 gap-8">
-                    <div class="p-20 bg-gray-100 rounded shadow">
+                    <div class="p-20 rounded shadow border border-slate-100">
                         <h3 class="text-xl font-bold">Web Development</h3>
                         <p class="mt-2 text-gray-600">Building responsive and fast websites using modern tools.</p>
                     </div>
-                    <div class="p-20 bg-gray-100 rounded shadow">
+                    <div class="p-20 rounded shadow border border-slate-100">
                         <h3 class="text-xl font-bold">UI/UX Design</h3>
                         <p class="mt-2 text-gray-600">Crafting intuitive and aesthetic user interfaces.</p>
                     </div>
-                    <div class="p-20 bg-gray-100 rounded shadow">
+                    <div class="p-20 rounded shadow border border-slate-100">
                         <h3 class="text-xl font-bold">Consulting</h3>
                         <p class="mt-2 text-gray-600">Offering expert advice on project optimization and scalability.
                         </p>
@@ -186,15 +307,15 @@
             <div class="max-w-screen-xl mx-auto px-4">
                 <h2 class="text-3xl font-bold text-center">Blog</h2>
                 <div class="mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    <div class="bg-white shadow rounded p-20">
+                    <div class="bg-white shadow rounded p-20 border border-slate-100">
                         <h3 class="font-bold text-lg">Latest Trends in Web Development</h3>
                         <p class="mt-2 text-gray-600">An overview of the most popular frameworks and tools in 2025.</p>
                     </div>
-                    <div class="bg-white shadow rounded p-20">
+                    <div class="bg-white shadow rounded p-20 border border-slate-100">
                         <h3 class="font-bold text-lg">Mastering Tailwind CSS</h3>
                         <p class="mt-2 text-gray-600">Tips and tricks to build stunning websites with Tailwind.</p>
                     </div>
-                    <div class="bg-white shadow rounded p-20">
+                    <div class="bg-white shadow rounded p-20 border border-slate-100">
                         <h3 class="font-bold text-lg">How to Build a Portfolio</h3>
                         <p class="mt-2 text-gray-600">A step-by-step guide to creating a standout portfolio.</p>
                     </div>
@@ -233,22 +354,22 @@
 
         <footer class="bg-gray-900 text-white">
             <div class="max-w-7xl mx-auto px-6 lg:px-16">
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left py-32">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left py-64">
                     <!-- Personal Branding -->
-                    <div class="pr-40">
+                    <div class="pr-10">
                         <h2 class="text-2xl font-semibold">Sara</h2>
-                        <p class="text-gray-400 text-sm mt-2">
+                        <p class="text-gray-50 text-2xl mt-2">
                             Frontend Developer | ReactJS Enthusiast | Passionate about Web UI/UX
                         </p>
                     </div>
                     <!-- Quick Navigation -->
-                    <div>
+                    <div class="mx-auto">
                         <h3 class="text-lg font-medium">Quick Links</h3>
-                        <ul class="mt-3 space-y-2">
-                            <li><a href="#about" class="text-gray-400 hover:text-white transition">About</a></li>
-                            <li><a href="#projects" class="text-gray-400 hover:text-white transition">Projects</a></li>
-                            <li><a href="#skills" class="text-gray-400 hover:text-white transition">Skills</a></li>
-                            <li><a href="#contact" class="text-gray-400 hover:text-white transition">Contact</a></li>
+                        <ul class="mt-3 space-y-4">
+                            <li><a href="#about" class="text-gray-50 hover:text-white transition">About</a></li>
+                            <li><a href="#projects" class="text-gray-50 hover:text-white transition">Projects</a></li>
+                            <li><a href="#skills" class="text-gray-50 hover:text-white transition">Skills</a></li>
+                            <li><a href="#contact" class="text-gray-50 hover:text-white transition">Contact</a></li>
                         </ul>
                     </div>
                     <!-- Social Media Links -->
@@ -269,7 +390,7 @@
 
                 <!-- Copyright -->
                 <div class="border-t border-gray-700 py-6 text-center">
-                    <p class="text-gray-500 text-sm">&copy; 2024 Sara. All rights reserved.</p>
+                    <p class="text-gray-500 text-sm">&copy; 2024 Shreya. All rights reserved.</p>
                 </div>
             </div>
         </footer>
@@ -280,11 +401,11 @@
 
         window.addEventListener("scroll", () => {
             if (window.scrollY > 50) {
-                navbar.classList.add("bg-gray-900");
+                navbar.classList.add("bg-slate-900");
                 navbar.classList.remove("bg-transparent");
             } else {
                 navbar.classList.add("bg-transparent");
-                navbar.classList.remove("bg-gray-900");
+                navbar.classList.remove("bg-slate-900");
             }
         });
     </script>
